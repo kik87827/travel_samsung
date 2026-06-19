@@ -7,6 +7,7 @@ var gulp = require("gulp"),
 	autoprefixer = require('gulp-autoprefixer'),
 	scss = require('gulp-sass')(require('sass')),
 	beautify = require('gulp-beautify'),
+	replace = require('gulp-replace');
 	htmlbeautify = require('gulp-html-beautify');
 
 gulp.task('default', ['scss','fileinclude','beautify','watch']);
@@ -23,6 +24,7 @@ gulp.task('scss', function () {
 gulp.task('htmlbeautify', function () {
 	var options = { indent_with_tabs : true }
 	gulp.src('./src/**.html')
+	.pipe(replace(/<!-- \s*prettier-ignore\s* -->/g, ''))
 	.pipe(htmlbeautify(options))
 	.pipe(gulp.dest('./dist/'))
 });
@@ -49,6 +51,9 @@ gulp.task('fileinclude',function(){
 		basepath : '@file'
 	}).on('error', function(){ console.log('path error')}))
 	// .pipe(removeEmptyLines())
+	.pipe(
+		replace(/^[ \t]*<!--\s*prettier-ignore\s*-->[ \t]*\r?\n?/gm, '')
+	)
 	.pipe(htmlbeautify({indent_with_tabs : true}))
 	.pipe(gulp.dest('./dist/'))
 });

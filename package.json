@@ -1,5 +1,5 @@
 {
-  "name": "hyecho",
+  "name": "samsung_travel",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "gulp-jsbeautifier": "^3.0.1",
     "gulp-jshint": "^2.1.0",
     "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
     "gulp-watch": "^5.0.1",
     "gulp-webserver": "^0.9.1",

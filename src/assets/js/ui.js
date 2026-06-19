@@ -1,8 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   uiBase.init();
 });
-window.addEventListener("load", () => {
-});
+window.addEventListener("load", () => {});
 
 const uiBase = {
   init() {
@@ -56,3 +55,87 @@ const uiBase = {
     }
   },
 };
+
+/* header 상단배너 */
+function headerTapeFunc() {
+  var mobileSwiper = null;
+  var resizeTimer = null;
+  var $slider = $(".header_sns_container");
+
+  // 현재 PC / 모바일 상태 저장
+  var currentMode = window.innerWidth <= 1023 ? "mobile" : "pc";
+
+  function clearSwiperClass() {
+    $slider.removeAttr("style").removeClass("swiper-container-horizontal swiper-container-vertical swiper-container-initialized");
+
+    $slider.find(".swiper-wrapper").removeAttr("style");
+
+    $slider.find(".swiper-slide").removeAttr("style").removeClass("swiper-slide-active swiper-slide-next swiper-slide-prev swiper-slide-duplicate");
+
+    // loop:true 사용 시 생성된 clone 제거
+    $slider.find(".swiper-slide-duplicate").remove();
+
+    $slider.find(".swiper-pagination").empty();
+  }
+
+  function initMobileSwiper() {
+    var isMobile = window.innerWidth <= 1023;
+
+    if (isMobile && mobileSwiper === null) {
+      mobileSwiper = new Swiper(".header_sns_container", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    }
+
+    if (!isMobile && mobileSwiper !== null) {
+      mobileSwiper.destroy(true, true);
+
+      // loop:true 사용 시 destroy 후 남아있는 clone 제거
+      $slider.find(".swiper-slide-duplicate").remove();
+
+      mobileSwiper = null;
+
+      clearSwiperClass();
+    }
+
+    if (!isMobile) {
+      clearSwiperClass();
+    }
+  }
+  function rowEventFunc() {
+    $(".btn_row_close").on("click", function (e) {
+      e.preventDefault();
+      $(this).closest(".header_sns_top_row").slideUp();
+    });
+  }
+
+  initMobileSwiper();
+  rowEventFunc();
+
+  $(window).on("resize.headerTapeFunc", function () {
+    clearTimeout(resizeTimer);
+
+    resizeTimer = setTimeout(function () {
+      var nextMode = window.innerWidth <= 1023 ? "mobile" : "pc";
+
+      // 모바일 상태에서 발생하는 resize 무시
+      // 예: 가로/세로 전환, 키보드 올라옴, 주소창 높이 변경
+      if (currentMode === "mobile" && nextMode === "mobile") {
+        return;
+      }
+
+      // PC 상태에서 발생하는 resize 무시
+      if (currentMode === "pc" && nextMode === "pc") {
+        return;
+      }
+
+      // PC ↔ 모바일 경계가 바뀔 때만 실행
+      currentMode = nextMode;
+      initMobileSwiper();
+    }, 200);
+  });
+}
