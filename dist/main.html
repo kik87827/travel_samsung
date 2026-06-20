@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="./assets/css/style.css" rel="stylesheet" />
+	<script src="./assets/js/moment.min.js"></script>
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/jquery-ui.js"></script>
+	<script src="./assets/js/daterangepicker.js"></script>
+	<script src="./assets/js/ui.js"></script>
+	<title></title>
+</head>
+
+
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_wrap">
+			<!-- sns top banner -->
+			<div class="header_sns_top_row">
+				<div class="items_inner">
+					<div class="swiper-container header_sns_container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="header_sns_item">
+									<div class="thum_cols"><img src="./assets/images/ico_tape_sns_01.png" class="header_sns_thum_img" alt="" /></div>
+									<div class="spec_cols">
+										<p class="header_sns_para">
+											삼성이와 함꼐 여행을 떠나요~<br />
+											네이버 밴드 특가 및
+											<strong>매일 새로운 상품!</strong>
+										</p>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="header_sns_item">
+									<div class="thum_cols"><img src="./assets/images/ico_tape_sns_02.png" class="header_sns_thum_img" alt="" /></div>
+									<div class="spec_cols">
+										<p class="header_sns_para">
+											여행정보는 이곳에 다 모였다!<br />
+											<strong>꿀정보 가득한</strong>
+											삼성여행사 블로그
+										</p>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="header_sns_item">
+									<div class="thum_cols"><img src="./assets/images/ico_tape_sns_03.png" class="header_sns_thum_img" alt="" /></div>
+									<div class="spec_cols">
+										<p class="header_sns_para">
+											궁금한게 있다면? 망설이지 않고 <br /><strong>무엇이든 물어보살!</strong> 카카오톡 채널 채팅
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<button class="btn_row_close"></button>
+				</div>
+			</div>
+			<script>
+				$(function() {
+					headerTapeFunc();
+				});
+			</script>
+			<!-- // sns top banner -->
+
+			<!-- pc -->
+			<div class="header_pc_group">
+				<div class="hgroup_main_row">
+					<div class="hgroup_inner">
+						<h1 class="hgroup_toplogo">
+							<a href="#" class="toplogo_link"><span class="hdtext">삼성여행사</span></a>
+						</h1>
+						<div class="header_search_wrap">
+							<fieldset class="hgroup_search_field">
+								<legend>검색</legend>
+								<div class="search_field_long_cols">
+									<input type="text" placeholder="검색어를 입력하세요" class="search_field_input" />
+								</div>
+								<div class="search_field_short_cols">
+									<a href="#" class="btn_search_field_item"><span class="hdtext">검색</span></a>
+								</div>
+							</fieldset>
+							<div class="header_rank_field">
+								<div class="swiper-container rank-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="rank_slide_item">
+												<span class="rank_keyword">HOT 키워드</span>
+												<div class="rank_value_wrap"><span class="rank_value">#오사카 에어텔</span></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="rank_slide_item">
+												<span class="rank_keyword">HOT 키워드</span>
+												<div class="rank_value_wrap"><span class="rank_value">#오사카 에어텔2</span></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="rank_slide_item">
+												<span class="rank_keyword">HOT 키워드</span>
+												<div class="rank_value_wrap"><span class="rank_value">#오사카 에어텔3</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="rank_all_item_wrap">
+									<div class="rank_header_row">
+										<div class="rank_header_obj">
+											<span class="rank_flag">HOT</span>
+											<span class="rank_header_title">인기검색어</span>
+										</div>
+									</div>
+									<div class="rank_contents_row">
+										<ul class="rank_keyword_list">
+											<li><a href="#" class="rank_keyword_item">일본</a></li>
+											<li><a href="#" class="rank_keyword_item">대마도</a></li>
+											<li><a href="#" class="rank_keyword_item">몽골</a></li>
+											<li><a href="#" class="rank_keyword_item">땡처리 항공권</a></li>
+											<li><a href="#" class="rank_keyword_item">장가계</a></li>
+											<li><a href="#" class="rank_keyword_item">상해</a></li>
+											<li><a href="#" class="rank_keyword_item">후쿠오카</a></li>
+											<li><a href="#" class="rank_keyword_item">대만</a></li>
+											<li><a href="#" class="rank_keyword_item">오키나와</a></li>
+											<li><a href="#" class="rank_keyword_item">다낭</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hgroup_util_list_wrap">
+							<ul class="hgroup_util_list">
+								<li>
+									<a href="#" class="hgroup_util">
+										<i class="ico_hgutil ico_login"></i>
+										<span class="hgroup_util_text">로그인</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="hgroup_util">
+										<i class="ico_hgutil ico_join"></i>
+										<span class="hgroup_util_text">회원가입</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="hgroup_util">
+										<i class="ico_hgutil ico_reserve"></i>
+										<span class="hgroup_util_text">예약확인/결제</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="hgroup_util">
+										<i class="ico_hgutil ico_review"></i>
+										<span class="hgroup_util_text">여행후기</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<nav class="hgroup_nav_row">
+					<div class="hgroup_inner">
+						<div class="hgnav_cols green_level_01">
+							<div class="hgroup_side hg_side_left">
+								<a href="#" class="hgroup_side_totalmenu" name="pcmenu">
+									<i class="totalmenu_line"></i>
+									<span class="side_totalmenu_text">전체</span>
+								</a>
+							</div>
+							<div class="hgroup_nav_wrap">
+								<ul class="hgroup_nav_list">
+									<li><span class="hg_nav_node">해외 ></span></li>
+									<li><a href="#" class="hg_nav_node">동남아</a></li>
+									<li><a href="#" class="hg_nav_node">일본</a></li>
+									<li><a href="#" class="hg_nav_node">중국/몽골/중앙아시아</a></li>
+									<li><a href="#" class="hg_nav_node">대만/홍콩</a></li>
+									<li><a href="#" class="hg_nav_node">크루즈</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="hgnav_part_cols green_level_0102_part"></div>
+						<div class="hgnav_cols green_level_02">
+							<div class="hgroup_nav_wrap">
+								<ul class="hgroup_nav_list">
+									<li><span class="hg_nav_node">국내 ></span></li>
+									<li><a href="#" class="hg_nav_node">제주</a></li>
+									<li><a href="#" class="hg_nav_node">버스</a></li>
+									<li><a href="#" class="hg_nav_node">기차</a></li>
+									<li><a href="#" class="hg_nav_node">울릉도/섬</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="hgnav_part_cols green_level_0203_part"></div>
+						<div class="hgnav_cols green_level_03">
+							<div class="hgroup_nav_wrap">
+								<ul class="hgroup_nav_list">
+									<li><a href="#" class="hg_nav_node">기획전</a></li>
+									<li><a href="#" class="hg_nav_node">여행후기</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- pc 전체메뉴 -->
+				<div class="desk_total_layer">
+					<div class="desk_panel_container">
+						<div class="tab_cols">
+							<ul class="desk_tabmenu_list">
+								<li><a href="#desk_depth_01" class="desk_tabmenu d_tab active">해외여행</a></li>
+								<li><a href="#desk_depth_02" class="desk_tabmenu d_tab">지방출발</a></li>
+								<li><a href="#desk_depth_03" class="desk_tabmenu d_tab">국내·제주</a></li>
+								<li><a href="#desk_depth_04" class="desk_tabmenu d_tab">프리미엄</a></li>
+								<li><a href="#desk_depth_05" class="desk_tabmenu d_tab">라르고</a></li>
+								<li><a href="#desk_depth_06" class="desk_tabmenu d_tab">항공·호텔</a></li>
+								<li><a href="#desk_depth_07" class="desk_tabmenu d_tab">테마여행</a></li>
+								<li><a href="#" class="desk_tabmenu color">참좋은LIVE</a></li>
+								<li><a href="#" class="desk_tabmenu color">기업·단체</a></li>
+								<li><a href="#" class="desk_tabmenu color">여행정보</a></li>
+								<li><a href="#" class="desk_tabmenu color">고객센터</a></li>
+								<li><a href="#" class="desk_tabmenu color">마이페이지</a></li>
+								<li><a href="#" class="desk_tabmenu color">기획전</a></li>
+								<li><a href="#" class="desk_tabmenu color">이벤트·할인</a></li>
+							</ul>
+						</div>
+						<div class="cont_cols">
+							<div class="desk_depth_wrap active" id="desk_depth_01">
+								<ul class="desk_depth_list">
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+													<li><a href="#" class="desk_depth_menu">쿠알라룸푸르 · 연계</a></li>
+													<li><a href="#" class="desk_depth_menu">브루나이</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="desk_depth_wrap" id="desk_depth_02">
+								<ul class="desk_depth_list">
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">부산</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+													<li><a href="#" class="desk_depth_menu">쿠알라룸푸르 · 연계</a></li>
+													<li><a href="#" class="desk_depth_menu">브루나이</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="desk_depth_wrap" id="desk_depth_03">
+								<ul class="desk_depth_list">
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">양산</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+													<li><a href="#" class="desk_depth_menu">쿠알라룸푸르 · 연계</a></li>
+													<li><a href="#" class="desk_depth_menu">브루나이</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="desk_depth_wrap" id="desk_depth_04">
+								<ul class="desk_depth_list">
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">프리미엄</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+													<li><a href="#" class="desk_depth_menu">쿠알라룸푸르 · 연계</a></li>
+													<li><a href="#" class="desk_depth_menu">브루나이</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="desk_depth_wrap" id="desk_depth_05">
+								<ul class="desk_depth_list">
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">라르고</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+													<li><a href="#" class="desk_depth_menu">쿠알라룸푸르 · 연계</a></li>
+													<li><a href="#" class="desk_depth_menu">브루나이</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="desk_depth_wrap" id="desk_depth_06">
+								<ul class="desk_depth_list">
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">항공 &middot; 호텔</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+													<li><a href="#" class="desk_depth_menu">쿠알라룸푸르 · 연계</a></li>
+													<li><a href="#" class="desk_depth_menu">브루나이</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="desk_depth_wrap" id="desk_depth_07">
+								<ul class="desk_depth_list">
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">테마여행</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+													<li><a href="#" class="desk_depth_menu">쿠알라룸푸르 · 연계</a></li>
+													<li><a href="#" class="desk_depth_menu">브루나이</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="desk_depth_item">
+											<div class="desk_depth_title_row"><a href="#" class="desk_depth_title">서유럽</a></div>
+											<div class="desk_depth_content_row">
+												<ul class="desk_depth_menu_list">
+													<li><a href="#" class="desk_depth_menu">하노이</a></li>
+													<li><a href="#" class="desk_depth_menu">나트랑</a></li>
+													<li><a href="#" class="desk_depth_menu">깜라인</a></li>
+													<li><a href="#" class="desk_depth_menu">말레이시아 · 브루나이</a></li>
+													<li><a href="#" class="desk_depth_menu">코타키나발루</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button class="btn_desk_total_close"></button>
+					</div>
+				</div>
+				<script>
+					$(function() {
+						pcTotalFunc();
+					});
+				</script>
+
+				<!-- // pc 전체메뉴 -->
+			</div>
+			<!-- // pc -->
+			<!-- mobile -->
+			<div class="header_mobile_group">
+				<div class="header_mobile_row">
+					<h1 class="mobile_toplogo">
+						<a href="#" class="mobile_toplogo_link">
+							<img src="./assets/images/toplogo_mobile.png" alt="삼성여행사" />
+						</a>
+					</h1>
+					<div class="mobile_top_layer left_pos">
+						<ul class="mobile_util_list">
+							<li>
+								<a href="#" class="btn_mb_util ico_total" name="totalmenu"><span class="mb_total_line"></span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="mobile_top_layer right_pos">
+						<ul class="mobile_util_list">
+							<li>
+								<a href="#" class="mobile_util_menu ico_search"><span class="hdtext">검색</span></a>
+							</li>
+							<li>
+								<a href="#" class="mobile_util_menu ico_men"><span class="hdtext">마이페이지</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- // mobile -->
+		</header>
+
+		<main class="middle_wrap">
+			<!-- 메인 검색 -->
+			<div class="main_search_container">
+				<div class="main_search_wrapper">
+					<div class="form_cols">
+						<ul class="ms_form_list">
+							<li>
+								<a href="#" class="ms_form_item">
+									<i class="ico shape_where"></i>
+									<div class="ms_node_group">
+										<div class="ms_node_placeholder">어디로 떠나세요?</div>
+										<div class="ms_node_result"></div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="ms_form_item">
+									<i class="ico shape_start"></i>
+									<div class="ms_node_group">
+										<div class="ms_node_placeholder">출발지</div>
+										<div class="ms_node_result"></div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="ms_form_item">
+									<i class="ico shape_date"></i>
+									<div class="ms_node_group">
+										<div class="ms_node_placeholder">출발일 선택</div>
+										<div class="ms_node_result"></div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="ms_form_item hasnot_arrow">
+									<i class="ico shape_search"></i>
+									<div class="ms_node_group">
+										<input type="text" class="ms_node_input" placeholder="키워드 검색" />
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn_cols">
+						<a href="#" class="btn_ms_form">
+							<i class="ico"></i>
+							<span class="text_node">검색</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- // 메인 검색 -->
+		</main>
+	</div>
+</body>
+
+</html>
