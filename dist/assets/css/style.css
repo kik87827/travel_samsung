@@ -3953,6 +3953,10 @@ span.ui-datepicker-month {
   margin-top: -8px;
 }
 
+.ms_node_group {
+  flex: 1;
+}
+
 .ms_node_placeholder,
 .ms_node_result {
   font-size: 15px;
@@ -3962,6 +3966,9 @@ span.ui-datepicker-month {
 input.ms_node_input {
   font-size: 15px;
   color: #4e4e4e;
+  width: 100%;
+  box-sizing: border-box;
+  height: 36px;
   border: 0;
   padding: 0;
   -webkit-appearance: none;
@@ -3988,5 +3995,62 @@ input.ms_node_input::placeholder {
 }
 .btn_ms_form .text_node {
   display: none;
+}
+
+@media (max-width: 1023px) {
+  .main_search_container {
+    margin: 20px;
+    padding: 0;
+  }
+  .main_search_wrapper {
+    border-radius: 13px;
+    padding: 0 15px;
+    display: block;
+  }
+  .main_search_wrapper .btn_cols {
+    padding: 15px;
+  }
+  .ms_form_list {
+    height: auto;
+    display: block;
+  }
+  .ms_form_list > li {
+    border: 0;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .ms_form_item {
+    height: auto;
+    padding: 15px 35px 15px 0;
+  }
+  .ms_form_item .ico {
+    flex-basis: 28px;
+    width: 28px;
+    height: 28px;
+  }
+  .ms_form_item.hasnot_arrow {
+    padding: 15px 15px 15px 0;
+  }
+  .ms_form_item:after {
+    right: 12px;
+  }
+  input.ms_node_input {
+    height: 28px;
+  }
+  .btn_ms_form {
+    min-height: 45px;
+    min-width: 140px;
+    text-align: center;
+    background: #008aa3;
+    border-radius: 100px;
+  }
+  .btn_ms_form .ico {
+    display: none;
+  }
+  .btn_ms_form .text_node {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+  }
 }
 /*# sourceMappingURL=style.css.map */
