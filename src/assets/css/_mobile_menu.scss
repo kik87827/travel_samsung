@@ -20,7 +20,7 @@
 .mbmenu_toplogo{display:inline-block;margin-left:20px; width:110px;}
 .mbmenu_toplogo img{vertical-align: top;}
 .mb_total_top_cols:last-of-type{}
-.mb_total_midscroll_row{flex:1;min-height:0;overflow-y:auto;}
+.mb_total_midscroll_row{flex:1;min-height:0;}
 .mb_total_util_who{display:flex;align-items: center;}
 .mb_total_util_who:before{display:block;content:'';margin-right:3px;width:14px;height:19px;background:url("../images/ico_menu_mb_men.png") no-repeat 0 0/100% auto;}
 .total_who_wrap{color:#fff;display:flex;align-items: center;margin-left:5px;}
@@ -62,9 +62,11 @@
 
 
 .both_total_container{
-    display:flex; min-height:100%;
-    .one_cols{flex:0 0 40%;background:#fafafa;position:relative;}
-    .two_cols{flex:1;}
+    display:flex; height:100%;
+    .one_cols,
+    .two_cols{position:relative;overflow:hidden;}
+    .one_cols{flex:0 0 40%;background:#fafafa;position:relative;overflow-y:auto;}
+    .two_cols{flex:1;position:relative;overflow-y:auto;}
 }
 .bo_menu_wrap{
 
