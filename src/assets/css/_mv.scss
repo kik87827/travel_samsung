@@ -1,0 +1,64 @@
+.mv-swiper-global{
+    position:relative; max-width:1200px; margin:20px auto;
+    .btn-navi{
+        box-shadow: 1.5px 2.598px 3px 0px rgba(0, 0, 0, 0.05); z-index:5;
+        position:absolute; top:50%; width:30px;height:30px; background:#fff; border-radius: 100%; transform: translateY(-50%);
+        &:after{display:block;content:'';width:8px;height:8px;border-left:1px solid #b5b5b5;border-bottom:1px solid #b5b5b5; position:absolute; top:11px;left:12px; transform: rotate(45deg);}
+        &.prev{left:-15px;}
+        &.next{right:-15px;
+            &:after{transform:rotate(225deg);left:9px;}
+        }
+    }
+}
+.swiper-container{
+    &.mv-swiper{
+        .swiper-wrapper{}
+        .swiper-slide{}
+    }
+}
+.mv_swiper_item{
+    display:flex; flex-direction: column; justify-content: center; height:360px; position:relative; overflow:hidden; border-radius: 20px;
+    .bg_group{
+        position:absolute;top:0;left:0;width:100%;height:100%;
+        &:after{display:block;content:'';width:100%;height:100%;position:absolute;top:0;left:0;background:url("../images/mv_pc_dim.png") no-repeat 0 0/cover;}
+        > img{
+            position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover; object-position: 50% 50%;
+            &.pc_img{}
+            &.mb_img{display:none;}
+        }
+    }
+    .txt_group{
+        position:relative; padding:30px 80px;
+    }
+    .flag_row{margin-bottom:5px;}
+    .mv_flag{color:#fff; font-size:12px;display:inline-block; padding:0 8px; height:18px; line-height:17px; border-radius:4px; background:#f74e4e;}
+    .main_copy{@include clamp(2); @include font(36px,500,1.2,#fff);}
+    .sub_copy{@include clamp(2); @include font(17px,300,1.2,#fff); margin-top:8px;}
+}
+.swiper-pagination.mv-pagination{
+    .swiper-pagination-bullet{
+        &.swiper-pagination-bullet-active{}
+    }
+}
+@media (max-width:1250px){
+    .mv-swiper-global{
+        margin:20px 30px;
+    }
+}
+@media (max-width:1023px){
+    .mv_swiper_item{
+        height:270px; border-radius: 10px;
+        .bg_group{
+            &:after{background-image:url("../images/mv_mb_dim.png")}
+            > img{
+                &.pc_img{display:none;}
+                &.mb_img{display:block;}
+            }
+        }
+        .txt_group{
+            position:relative; padding:15px 30px;
+        }
+        .main_copy{font-size:24px;}
+        .sub_copy{font-size:12px;}
+    }
+}
