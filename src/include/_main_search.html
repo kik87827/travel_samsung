@@ -22,7 +22,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="ms_form_item">
+          <a href="javascript:;" class="ms_form_item" id="daterange">
             <i class="ico shape_date"></i>
             <div class="ms_node_group">
               <div class="ms_node_placeholder">출발일 선택</div>
@@ -48,4 +48,53 @@
     </div>
   </div>
 </div>
+<script>
+  $(function () {
+    $("#daterange").daterangepicker(
+      {
+        addDesign: "pos2",
+        autoUpdateInput: false,
+        elseMent: "출발일 선택",
+        locale: {
+          format: "YYYY-MM-DD",
+          daysOfWeek: ["일", "월", "화", "수", "목", "금", "토"],
+          monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+          applyLabel: "적용",
+        },
+      },
+      function (start, end) {
+        // 기간 선택 완료 시 input 값 채움
+        $("#daterange").val(start.format("YYYY-MM-DD") + " ~ " + end.format("YYYY-MM-DD"));
+      }
+    );
+    $("#daterange").on("show.daterangepicker", function (ev, picker) {
+      rightCheck();
+    });
+    $("#daterange").on("apply.daterangepicker", function (ev, picker) {
+      let thisObj = $(this);
+      thisObj.val(picker.startDate.format("YYYY-MM-DD") + " ~ " + picker.endDate.format("YYYY-MM-DD"));
+      thisObj.find(".ms_node_result").text(picker.startDate.format("YYYY-MM-DD") + " ~ " + picker.endDate.format("YYYY-MM-DD"));
+      thisObj.addClass("result_mode");
+    });
+
+    /* prettier-ignore */
+    $(window).on("resize", function () {
+      rightCheck();
+    }).resize();
+
+    function rightCheck() {
+      const $daterangeItem = $(".daterangepicker.show-calendar");
+
+      $daterangeItem.removeClass("right_end");
+
+      const margin = 20;
+      const windowWidth = $(window).width();
+      const rightPos = $daterangeItem.offset().left + $daterangeItem.outerWidth();
+      console.log(windowWidth, rightPos);
+      if (rightPos > windowWidth - margin) {
+        $daterangeItem.addClass("right_end");
+      }
+    }
+  });
+</script>
 <!-- // 메인 검색 -->

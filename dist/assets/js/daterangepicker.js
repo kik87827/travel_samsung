@@ -106,23 +106,24 @@
     //html template for the picker UI
     if (typeof options.template !== "string" && !(options.template instanceof $))
       options.template =
-        '<div class="daterangepicker">' +
+        '<div class="daterangepicker"><div class="daterangepicker-inner">' +
         '<div class="ranges"></div>' +
         '<div class="daterange-ment-low"><p class="daterange-ment">' +
         this.calendarMent +
         "</p></div>" +
-        '<div class="drp-calendar left">' +
+        '<div class="drp-calendar-wrap"><div class="drp-calendar left">' +
         '<div class="calendar-table"></div>' +
         '<div class="calendar-time"></div>' +
         "</div>" +
         '<div class="drp-calendar right">' +
         '<div class="calendar-table"></div>' +
         '<div class="calendar-time"></div>' +
-        "</div>" +
+        "</div></div>" +
         '<div class="drp-buttons">' +
         // '<span class="drp-selected"></span>' +
         '<button class="cancelBtn layerclose" type="button"></button>' +
         '<button class="applyBtn" disabled="disabled" type="button"></button> ' +
+        "</div>" +
         "</div>" +
         "</div>";
 

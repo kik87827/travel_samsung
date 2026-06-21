@@ -13,7 +13,7 @@
     }
 }
 .ms_form_item{
-    height:74px; position:relative; display:flex; gap:6px; align-items: center;  padding:20px 50px 20px 20px; box-sizing: border-box;
+    height:74px; position:relative; display:flex; gap:6px; align-items: center;  padding:20px 45px 20px 20px; box-sizing: border-box;
     &.hasnot_arrow{
         padding:20px;
         &:after{display:none;}
@@ -32,6 +32,11 @@
     }
     &:after{
         display:block;content:'';width:10px;height:10px;border-right:1px solid #727272; border-bottom:1px solid #727272; position:absolute;top:50%;right:22px; transform: rotate(45deg); margin-top:-8px;
+    }
+
+    &.result_mode{
+        .ms_node_placeholder{display:none;}
+        .ms_node_result{display:block;}
     }
 }
 .ms_node_group{flex:1;}
