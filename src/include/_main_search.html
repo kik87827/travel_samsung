@@ -4,7 +4,7 @@
     <div class="form_cols">
       <ul class="ms_form_list">
         <li>
-          <a href="#" class="ms_form_item">
+          <a href="#" class="ms_form_item" id="local_where" data-poslayer="#layer_box_01">
             <i class="ico shape_where"></i>
             <div class="ms_node_group">
               <div class="ms_node_placeholder">어디로 떠나세요?</div>
@@ -13,7 +13,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="ms_form_item">
+          <a href="#" class="ms_form_item" id="local_start" data-poslayer="#layer_box_02">
             <i class="ico shape_start"></i>
             <div class="ms_node_group">
               <div class="ms_node_placeholder">출발지</div>
@@ -48,6 +48,567 @@
     </div>
   </div>
 </div>
+<!-- layer -->
+<div class="poslayer_z wtype2 mb_full" id="layer_box_01">
+  <div class="poslayer_titlow">
+    <p class="poslayer_tit">어디로 떠나세요?</p>
+  </div>
+  <div class="poslayer_contlow">
+    <div class="pcont_w">
+      <div class="pclayer_scr_w">
+        <div class="sort_chkitem_container">
+          <div class="cate_cols">
+            <ul class="sort_cateitem_list">
+              <li><a href="#catecont_01" class="sort_cateitem active">유럽/중동/아프리카</a></li>
+              <li><a href="#catecont_02" class="sort_cateitem">동남아/대만/서남아</a></li>
+              <li><a href="#catecont_03" class="sort_cateitem">일본</a></li>
+              <li><a href="#catecont_04" class="sort_cateitem">중국/홍콩/마카오/몽골/중앙아시아</a></li>
+              <li><a href="#catecont_05" class="sort_cateitem">괌/사이판/호주/뉴질랜드</a></li>
+              <li><a href="#catecont_06" class="sort_cateitem">미주/캐나다/하와이/중남미</a></li>
+              <li><a href="#catecont_07" class="sort_cateitem">크루즈</a></li>
+              <li><a href="#catecont_08" class="sort_cateitem">골프</a></li>
+              <li><a href="#catecont_09" class="sort_cateitem">허니문</a></li>
+            </ul>
+          </div>
+          <div class="depth_cols">
+            <div class="sort_catecont_wrap active" id="catecont_01">
+              <ul class="sort_catecont_list">
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">스페인/포르투칼</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sort_catecont_wrap" id="catecont_02">
+              <ul class="sort_catecont_list">
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동남아</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">스페인/포르투칼</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sort_catecont_wrap" id="catecont_03">
+              <ul class="sort_catecont_list">
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">일본</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">스페인/포르투칼</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sort_catecont_wrap" id="catecont_04">
+              <ul class="sort_catecont_list">
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">중국</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">스페인/포르투칼</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sort_catecont_wrap" id="catecont_05">
+              <ul class="sort_catecont_list">
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">괌</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">스페인/포르투칼</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">동유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="sort_cateitem_group">
+                    <div class="sort_cateitem_title_row"><a href="javascript:;" class="sort_cateitem_title">서유럽</a></div>
+                    <div class="sort_cateitem_contents">
+                      <ul class="scc_item_list">
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">하노이</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">다낭</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">나트랑</a></li>
+                        <li><a href="javascript:;" class="scc_item">깜라인</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="sort_catecont_wrap" id="catecont_06">이하 동일</div>
+            <div class="sort_catecont_wrap" id="catecont_07">이하 동일</div>
+            <div class="sort_catecont_wrap" id="catecont_08">이하 동일</div>
+            <div class="sort_catecont_wrap" id="catecont_09">이하 동일</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn_psubmit_w">
+    <a href="#" class="btn_psubmit">선택</a>
+  </div>
+  <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+</div>
+<div class="poslayer_z" id="layer_box_02">
+  <div class="poslayer_titlow">
+    <p class="poslayer_tit">출발지 선택</p>
+  </div>
+  <div class="poslayer_contlow">
+    <div class="pcont_w">
+      <div class="pclayer_scr_w">
+        <ul class="pclayer_vlist">
+          <li><a href="javascript:;" class="pcv_chk">전체</a></li>
+          <li><a href="javascript:;" class="pcv_chk">서울(인천/김포)</a></li>
+          <li><a href="javascript:;" class="pcv_chk">부산</a></li>
+          <li><a href="javascript:;" class="pcv_chk">대구</a></li>
+          <li><a href="javascript:;" class="pcv_chk">무안</a></li>
+          <li><a href="javascript:;" class="pcv_chk">제주</a></li>
+          <li><a href="javascript:;" class="pcv_chk">양양</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn_psubmit_w">
+      <a href="#" class="btn_psubmit">선택</a>
+    </div>
+  </div>
+  <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+</div>
 <script>
   $(function () {
     $("#daterange").daterangepicker(
@@ -59,7 +620,7 @@
           format: "YYYY-MM-DD",
           daysOfWeek: ["일", "월", "화", "수", "목", "금", "토"],
           monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-          applyLabel: "적용",
+          applyLabel: "선택",
         },
       },
       function (start, end) {
@@ -69,6 +630,16 @@
     );
     $("#daterange").on("show.daterangepicker", function (ev, picker) {
       rightCheck();
+
+      if ($(window).width() < 1024 && "ontouchstart" in window) {
+        console.log("open2");
+        setTimeout(() => {
+          $("html,body").addClass("touchDis");
+        }, 40);
+      }
+    });
+    $("#daterange").on("hide.daterangepicker", function (ev, picker) {
+      $("html,body").removeClass("touchDis");
     });
     $("#daterange").on("apply.daterangepicker", function (ev, picker) {
       let thisObj = $(this);
@@ -80,7 +651,13 @@
     /* prettier-ignore */
     $(window).on("resize", function () {
       rightCheck();
+      if($(window).width() >= 1024){
+        $("html,body").removeClass("touchDis");
+      }
     }).resize();
+
+    /* 어디로 떠나세요 */
+    whereContainerFunc();
 
     function rightCheck() {
       const $daterangeItem = $(".daterangepicker.show-calendar");
@@ -90,7 +667,6 @@
       const margin = 20;
       const windowWidth = $(window).width();
       const rightPos = $daterangeItem.offset().left + $daterangeItem.outerWidth();
-      console.log(windowWidth, rightPos);
       if (rightPos > windowWidth - margin) {
         $daterangeItem.addClass("right_end");
       }

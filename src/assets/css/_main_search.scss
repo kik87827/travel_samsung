@@ -56,6 +56,51 @@ input.ms_node_input{
     .text_node{display:none;}
 }
 
+.sort_chkitem_container{
+    display:flex;
+    .cate_cols{flex:0 0 230px; width:230px; border-right:1px solid #e7e7e7; box-sizing: border-box; padding:0 35px 0 0}
+    .depth_cols{padding:0 0 0 35px; flex:1;}
+}
+.sort_cateitem_list{
+    > li{}
+}
+.sort_cateitem{
+    font-size:15px; border-radius:4px; padding:15px; color:#6d6c6c; font-weight:500; display:block; border:1px solid transparent;
+    &.active{
+        border-color:#008aa3;
+        color:#008aa3;
+        background:#f2faf8;
+    }
+}
+.sort_catecont_wrap{
+    display:none;
+    &.active{display:block;}
+}
+.sort_catecont_list{
+    display:flex; flex-wrap:wrap; margin-right:-40px; gap:40px;
+    > li{flex:0 0 calc(33.33333333333% - 40px)}
+}
+.sort_cateitem_group{}
+.sort_cateitem_title_row{border-bottom:1px solid #000000; padding:0 5px 10px;}
+.sort_cateitem_title{font-weight:500; color:#4e4e4e; font-size:16px;
+    &:hover,&.active{
+        color:#008aa3;
+    }
+}
+.sort_cateitem_contents{margin-top:20px;padding:0 5px;}
+.scc_item_list{
+    display:flex; flex-wrap:wrap; gap:20px; margin-right:-20px;
+    > li{
+        flex:0 0 calc(50% - 20px);
+    }
+}
+.scc_item{
+    display:inline-block; font-size:14px; color:#4e4e4e; border-bottom:1px solid transparent; padding-bottom:2px;
+    &:hover,&.active{
+        color:#008aa3; border-color: #008aa3;
+    }
+}
+
 @media (max-width:1023px){
     .main_search_container{margin:20px; padding:0;}
     .main_search_wrapper{border-radius: 13px;padding:0 15px; display:block;
@@ -77,4 +122,26 @@ input.ms_node_input{
         .ico{display:none;}
         .text_node{display:block; font-size:15px; color:#fff; font-weight:500;}
     }
+
+
+    
+    .sort_chkitem_container{
+        .cate_cols{flex:0 0 40%; width:40%; padding:0 15px 0 0}
+        .depth_cols{padding:0 0 0 15px;}
+    }
+    .sort_cateitem{
+        font-size:13px; padding:8px;
+    }
+    .sort_catecont_list{
+        display:block; margin:0;
+        > li{
+            margin-bottom:30px;
+            &:last-of-type{margin-bottom:0}
+        }
+    }
+    .scc_item,
+    .sort_cateitem_title{ font-size:13px;}
+    
+    .sort_cateitem_contents{margin-top:20px;padding:0 5px;}
+    
 }
