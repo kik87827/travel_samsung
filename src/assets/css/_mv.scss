@@ -12,6 +12,7 @@
 }
 .swiper-container{
     &.mv-swiper{
+        overflow:visible;
         .swiper-wrapper{}
         .swiper-slide{}
     }
@@ -28,7 +29,7 @@
         }
     }
     .txt_group{
-        position:relative; padding:30px 80px;
+        position:relative; padding:30px 80px 50px;
     }
     .flag_row{margin-bottom:5px;}
     .mv_flag{color:#fff; font-size:12px;display:inline-block; padding:0 8px; height:18px; line-height:17px; border-radius:4px; background:#f74e4e;}
@@ -36,8 +37,10 @@
     .sub_copy{@include clamp(2); @include font(17px,300,1.2,#fff); margin-top:8px;}
 }
 .swiper-pagination.mv-pagination{
+    font-size:0;line-height:0; bottom:20px;
     .swiper-pagination-bullet{
-        &.swiper-pagination-bullet-active{}
+        opacity:1; width:10px; height:10px; margin:0 3px; background:#fff; 
+        &.swiper-pagination-bullet-active{background:#000;}
     }
 }
 @media (max-width:1250px){
@@ -56,9 +59,16 @@
             }
         }
         .txt_group{
-            position:relative; padding:15px 30px;
+            position:relative; padding:15px 30px 58px;
         }
         .main_copy{font-size:24px;}
         .sub_copy{font-size:12px;}
+    }
+
+    .swiper-pagination.mv-pagination{
+        bottom:15px; left:50%; transform: translateX(-50%); width:auto; padding:8px 11px; background:rgba(0,0,0,.5); border-radius:100px; border:1px solid rgba(255,255,255,.5);
+        .swiper-pagination-bullet{
+            &.swiper-pagination-bullet-active{background:#008aa3;}
+        }
     }
 }

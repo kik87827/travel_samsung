@@ -1056,6 +1056,11 @@ a.hg_nav_node:hover {
   width: 100%;
 }
 
+.middle_wrap {
+  position: relative;
+  overflow-x: hidden;
+}
+
 @media (max-width: 1500px) {
   .hgroup_main_row .hgroup_inner {
     gap: 50px;
@@ -3922,6 +3927,9 @@ span.ui-datepicker-month {
   left: 9px;
 }
 
+.swiper-container.mv-swiper {
+  overflow: visible;
+}
 .mv_swiper_item {
   display: flex;
   flex-direction: column;
@@ -3964,7 +3972,7 @@ span.ui-datepicker-month {
 }
 .mv_swiper_item .txt_group {
   position: relative;
-  padding: 30px 80px;
+  padding: 30px 80px 50px;
 }
 .mv_swiper_item .flag_row {
   margin-bottom: 5px;
@@ -4003,6 +4011,22 @@ span.ui-datepicker-month {
   margin-top: 8px;
 }
 
+.swiper-pagination.mv-pagination {
+  font-size: 0;
+  line-height: 0;
+  bottom: 20px;
+}
+.swiper-pagination.mv-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  background: #fff;
+}
+.swiper-pagination.mv-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #000;
+}
+
 @media (max-width: 1250px) {
   .mv-swiper-global {
     margin: 20px 30px;
@@ -4024,13 +4048,26 @@ span.ui-datepicker-month {
   }
   .mv_swiper_item .txt_group {
     position: relative;
-    padding: 15px 30px;
+    padding: 15px 30px 58px;
   }
   .mv_swiper_item .main_copy {
     font-size: 24px;
   }
   .mv_swiper_item .sub_copy {
     font-size: 12px;
+  }
+  .swiper-pagination.mv-pagination {
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 8px 11px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .swiper-pagination.mv-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #008aa3;
   }
 }
 .main_search_container {

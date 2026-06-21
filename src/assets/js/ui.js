@@ -472,3 +472,37 @@ function pcTotalFunc() {
     }
   });
 }
+
+
+function mainBannerSwiperFunc() {
+  const mainBannerSwiper = new Swiper(".swiper-container.mv-swiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 26,
+    loop: true,
+    speed: 800,
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+    pagination: {
+      el: ".swiper-pagination.mv-pagination",
+      clickable: true,
+    },
+
+    observer: true,
+    observeParents: true,
+
+    navigation: {
+      nextEl: ".mv-swiper-global .btn-navi.next",
+      prevEl: ".mv-swiper-global .btn-navi.prev",
+    },
+    breakpoints: {
+      1023: {
+        spaceBetween: 18,
+      },
+    },
+  });
+}
