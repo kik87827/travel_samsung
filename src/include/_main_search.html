@@ -8,7 +8,10 @@
             <i class="ico shape_where"></i>
             <div class="ms_node_group">
               <div class="ms_node_placeholder">어디로 떠나세요?</div>
-              <div class="ms_node_result"></div>
+              <div class="ms_node_result">
+                <span class="ms_node_result_text"></span>
+                <button class="btn_node_reset"></button>
+              </div>
             </div>
           </a>
         </li>
@@ -17,7 +20,10 @@
             <i class="ico shape_start"></i>
             <div class="ms_node_group">
               <div class="ms_node_placeholder">출발지</div>
-              <div class="ms_node_result"></div>
+              <div class="ms_node_result">
+                <span class="ms_node_result_text"></span>
+                <button class="btn_node_reset"></button>
+              </div>
             </div>
           </a>
         </li>
@@ -26,7 +32,10 @@
             <i class="ico shape_date"></i>
             <div class="ms_node_group">
               <div class="ms_node_placeholder">출발일 선택</div>
-              <div class="ms_node_result"></div>
+              <div class="ms_node_result">
+                <span class="ms_node_result_text"></span>
+                <button class="btn_node_reset"></button>
+              </div>
             </div>
           </a>
         </li>
@@ -644,7 +653,7 @@
     $("#daterange").on("apply.daterangepicker", function (ev, picker) {
       let thisObj = $(this);
       thisObj.val(picker.startDate.format("YYYY-MM-DD") + " ~ " + picker.endDate.format("YYYY-MM-DD"));
-      thisObj.find(".ms_node_result").text(picker.startDate.format("YYYY-MM-DD") + " ~ " + picker.endDate.format("YYYY-MM-DD"));
+      thisObj.find(".ms_node_result_text").text(picker.startDate.format("YYYY-MM-DD") + " ~ " + picker.endDate.format("YYYY-MM-DD"));
       thisObj.addClass("result_mode");
     });
 

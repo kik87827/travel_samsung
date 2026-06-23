@@ -43,7 +43,13 @@
 .ms_node_placeholder,
 .ms_node_result{font-size:15px; color:#4e4e4e;}
 .ms_node_placeholder{}
-.ms_node_result{}
+.ms_node_result{display:none;}
+.btn_node_reset{display:inline-block;width:14px;height:14px;position:relative; top:1px;
+    &:before,
+    &:after{display:block; content:''; width:1px;height:13px;background:#c1c1c1; position:absolute;top:50%;left:50%;}
+    &:before{ transform: translate(-50%,-50%) rotate(-45deg);}
+    &:after{transform: translate(-50%,-50%) rotate(45deg);}
+}
 input.ms_node_input{
     font-size:15px; color:#4e4e4e; width:100%;box-sizing: border-box; height:36px;
     border:0; padding:0; appearance: none;

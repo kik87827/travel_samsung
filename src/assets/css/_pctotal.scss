@@ -36,7 +36,9 @@
 }
 .desk_depth_item{}
 .desk_depth_title_row{border-bottom:1px solid #000000;  padding:0 10px 8px;}
-.desk_depth_title{font-size:16px; font-weight:500; color:#333333; display:block;}
+.desk_depth_title{font-size:16px; font-weight:500; color:#333333; display:block;
+    &:hover{color:#008aa3;}
+}
 .desk_depth_content_row{}
 .desk_depth_menu_list{
     margin:15px 10px;

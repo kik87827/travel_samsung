@@ -29,40 +29,27 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<a href="#" class="header_sns_item">
-									<div class="thum_cols"><img src="./assets/images/ico_tape_sns_01.png" class="header_sns_thum_img" alt="" /></div>
-									<div class="spec_cols">
-										<p class="header_sns_para">
-											삼성이와 함꼐 여행을 떠나요~<br />
-											네이버 밴드 특가 및
-											<strong>매일 새로운 상품!</strong>
-										</p>
-									</div>
+									<img src="./assets/images/tape_ban_pc_01.png" class="header_sns_banner_pc_img" alt="" />
+									<img src="./assets/images/tape_ban_mobile_01.png" class="header_sns_banner_mb_img" alt="" />
 								</a>
 							</div>
+							<span class="swiper-pc-part"></span>
 							<div class="swiper-slide">
 								<a href="#" class="header_sns_item">
-									<div class="thum_cols"><img src="./assets/images/ico_tape_sns_02.png" class="header_sns_thum_img" alt="" /></div>
-									<div class="spec_cols">
-										<p class="header_sns_para">
-											여행정보는 이곳에 다 모였다!<br />
-											<strong>꿀정보 가득한</strong>
-											삼성여행사 블로그
-										</p>
-									</div>
+									<img src="./assets/images/tape_ban_pc_02.png" class="header_sns_banner_pc_img" alt="" />
+									<img src="./assets/images/tape_ban_mobile_02.png" class="header_sns_banner_mb_img" alt="" />
 								</a>
 							</div>
+							<span class="swiper-pc-part"></span>
 							<div class="swiper-slide">
 								<a href="#" class="header_sns_item">
-									<div class="thum_cols"><img src="./assets/images/ico_tape_sns_03.png" class="header_sns_thum_img" alt="" /></div>
-									<div class="spec_cols">
-										<p class="header_sns_para">
-											궁금한게 있다면? 망설이지 않고 <br /><strong>무엇이든 물어보살!</strong> 카카오톡 채널 채팅
-										</p>
-									</div>
+									<img src="./assets/images/tape_ban_pc_03.png" class="header_sns_banner_pc_img" alt="" />
+									<img src="./assets/images/tape_ban_mobile_03.png" class="header_sns_banner_mb_img" alt="" />
 								</a>
 							</div>
 						</div>
 					</div>
+
 					<button class="btn_row_close"></button>
 				</div>
 			</div>
@@ -1531,7 +1518,10 @@
 									<i class="ico shape_where"></i>
 									<div class="ms_node_group">
 										<div class="ms_node_placeholder">어디로 떠나세요?</div>
-										<div class="ms_node_result"></div>
+										<div class="ms_node_result">
+											<span class="ms_node_result_text"></span>
+											<button class="btn_node_reset"></button>
+										</div>
 									</div>
 								</a>
 							</li>
@@ -1540,7 +1530,10 @@
 									<i class="ico shape_start"></i>
 									<div class="ms_node_group">
 										<div class="ms_node_placeholder">출발지</div>
-										<div class="ms_node_result"></div>
+										<div class="ms_node_result">
+											<span class="ms_node_result_text"></span>
+											<button class="btn_node_reset"></button>
+										</div>
 									</div>
 								</a>
 							</li>
@@ -1549,7 +1542,10 @@
 									<i class="ico shape_date"></i>
 									<div class="ms_node_group">
 										<div class="ms_node_placeholder">출발일 선택</div>
-										<div class="ms_node_result"></div>
+										<div class="ms_node_result">
+											<span class="ms_node_result_text"></span>
+											<button class="btn_node_reset"></button>
+										</div>
 									</div>
 								</a>
 							</li>
@@ -2166,7 +2162,7 @@
 					$("#daterange").on("apply.daterangepicker", function(ev, picker) {
 						let thisObj = $(this);
 						thisObj.val(picker.startDate.format("YYYY-MM-DD") + " ~ " + picker.endDate.format("YYYY-MM-DD"));
-						thisObj.find(".ms_node_result").text(picker.startDate.format("YYYY-MM-DD") + " ~ " + picker.endDate.format("YYYY-MM-DD"));
+						thisObj.find(".ms_node_result_text").text(picker.startDate.format("YYYY-MM-DD") + " ~ " + picker.endDate.format("YYYY-MM-DD"));
 						thisObj.addClass("result_mode");
 					});
 

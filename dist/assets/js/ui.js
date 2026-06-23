@@ -70,9 +70,12 @@ function headerTapeFunc() {
   var mobileSwiper = null;
   var resizeTimer = null;
   var $slider = $(".header_sns_container");
+  const $page_wrap = $(".page_wrap");
+  const $header_wrap = $(".header_wrap");
 
   // 현재 PC / 모바일 상태 저장
   var currentMode = window.innerWidth <= 1023 ? "mobile" : "pc";
+
 
   function clearSwiperClass() {
     $slider.removeAttr("style").removeClass("swiper-container-horizontal swiper-container-vertical swiper-container-initialized");
@@ -119,14 +122,38 @@ function headerTapeFunc() {
   function rowEventFunc() {
     $(".btn_row_close").on("click", function(e) {
       e.preventDefault();
-      $(this).closest(".header_sns_top_row").slideUp();
+      $(this).closest(".header_sns_top_row").slideUp(500);
+      if ($(window).width() < 1024) {
+        $page_wrap.stop().animate({
+            paddingTop: "60px",
+          },
+          500
+        );
+      }
     });
   }
 
+  function mbHeader() {
+
+    if ($(window).width() < 1024) {
+      $page_wrap.css({
+        "padding-top": $header_wrap.outerHeight(true)
+      });
+    } else {
+      $page_wrap.css({
+        "padding-top": 0
+      });
+
+    }
+  }
+
+
   initMobileSwiper();
   rowEventFunc();
+  mbHeader();
 
   $(window).on("resize.headerTapeFunc", function() {
+    mbHeader();
     clearTimeout(resizeTimer);
 
     resizeTimer = setTimeout(function() {
@@ -574,11 +601,11 @@ function posLayerEvent() {
     let activeSccTwoText = thisParent.find(".scc_item.active").text();
 
     if (thisSubParent.length) {
-      targetCols.find(".ms_node_result").html((activeSccOneText + "/" + activeSccTwoText).replace(/^\/+|\/+$/g, ""));
+      targetCols.find(".ms_node_result_text").html((activeSccOneText + "/" + activeSccTwoText).replace(/^\/+|\/+$/g, ""));
     } else {
-      targetCols.find(".ms_node_result").html(activeText);
+      targetCols.find(".ms_node_result_text").html(activeText);
     }
-    if (targetCols.find(".ms_node_result").text().length) {
+    if (targetCols.find(".ms_node_result_text").text().length) {
       targetCols.addClass("result_mode");
     }
     posLayerHide(thisParent);
@@ -588,6 +615,14 @@ function posLayerEvent() {
     e.preventDefault();
     $(this).parents("li").siblings().find(".pcv_chk,.scc_item, .sort_cateitem_title").removeClass("active");
     $(this).addClass("active");
+  });
+
+  $(".btn_node_reset").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $msformitem = $(this).closest(".ms_form_item");
+    $(this).closest(".ms_form_item").removeClass("result_mode");
+    $msformitem.find(".ms_node_result_text").empty();
   });
 
   $(document).on("click", function(e) {
