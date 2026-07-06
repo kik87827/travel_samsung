@@ -3944,6 +3944,12 @@ span.ui-datepicker-month {
 /* // 공통 popup */
 /* // component */
 /* contents */
+.detail_wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 /* // contents */
 .mv-swiper-global {
   position: relative;
