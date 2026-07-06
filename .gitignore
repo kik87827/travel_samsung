@@ -4,3 +4,5 @@
 
 *.map
 
+/package.json
+/package-lock.json
