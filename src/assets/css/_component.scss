@@ -10,6 +10,9 @@ input.props_form_element{
         &:checked{background-color:#176bdd;border-color:#176bdd;}
     }
 }
+@media (max-width:1023px){
+    input.props_form_element{width:16px;height:16px;}
+}
 
 /* popup */
 .btn_guide_box{border:1px solid #ddd;padding:20px;color:#000;display:inline-block; font-size:16px;}

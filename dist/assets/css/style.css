@@ -3648,6 +3648,12 @@ input.props_form_element[type=checkbox]:checked {
   border-color: #176bdd;
 }
 
+@media (max-width: 1023px) {
+  input.props_form_element {
+    width: 16px;
+    height: 16px;
+  }
+}
 /* popup */
 .btn_guide_box {
   border: 1px solid #ddd;
@@ -4053,7 +4059,7 @@ table.respon_tb th.define_each, table.respon_tb td.define_each {
 }
 
 .respon_inner_dl {
-  display: inline-flex;
+  display: inline-block;
 }
 .respon_inner_dl dt {
   display: none;
@@ -4067,8 +4073,81 @@ table.respon_tb th.define_each, table.respon_tb td.define_each {
   display: inline-block;
 }
 
+@media (max-width: 1023px) {
+  .dp_title {
+    font-size: 14px;
+  }
+  .dp_title_row {
+    margin-bottom: 10px;
+  }
+  .dp_block {
+    margin-bottom: 30px;
+  }
+  table.respon_tb {
+    display: block;
+    border-top: 1px solid #4c586c;
+  }
+  table.respon_tb thead, table.respon_tb tr, table.respon_tb tbody, table.respon_tb th, table.respon_tb td {
+    display: block;
+  }
+  table.respon_tb thead {
+    display: none;
+  }
+  table.respon_tb tbody tr {
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+    padding: 15px 15px 15px 45px;
+  }
+  table.respon_tb tbody td {
+    border: 0;
+    padding: 0 0 10px 0;
+    width: 100% !important;
+  }
+  table.respon_tb tbody td:last-of-type {
+    padding-bottom: 0;
+  }
+  table.respon_tb tbody td.define_choice {
+    background: none;
+    padding: 0;
+  }
+  table.respon_tb tbody td.define_choice input.props_form_element {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  .respon_inner_dl {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .respon_inner_dl dt {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .respon_inner_dl dt .res_thtext {
+    color: #4e4e4e;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .respon_inner_dl dt .res_thtext_sub {
+    color: #4e4e4e;
+    opacity: 1;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    top: 1px;
+  }
+  .primary_data_para {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .data_each_node {
+    font-size: 14px;
+  }
+}
 /* // contents */
-/*  */
 .mv-swiper-global {
   position: relative;
   max-width: 1200px;

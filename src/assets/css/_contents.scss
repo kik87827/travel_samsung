@@ -35,7 +35,7 @@ table.respon_tb{
 .res_thtext{display:inline-block;@include font(16px,350,1,#fff);}
 .res_thtext_sub{@include font(12px,300,1,#fff); opacity: .5; margin-top:3px;}
 .respon_inner_dl{
-    display:inline-flex;
+    display:inline-block;
     dt,dd{}
     dt{
         display:none;
@@ -47,7 +47,40 @@ table.respon_tb{
 .primary_data_para,
 .data_each_node{@include font(15px,350,1,#4e4e4e);display:inline-block;}
 .primary_data_para{}
+
+@media (max-width:1023px){
+    .dp_title{font-size:14px;}
+    .dp_title_row{margin-bottom:10px;}
+    .dp_block{margin-bottom:30px;}
+    table.respon_tb{
+        display:block;border-top:1px solid #4c586c;
+        thead,tr,tbody,th,td{display:block;}
+        thead{display:none;}
+        tbody{
+            tr{border-bottom:1px solid #e7e7e7; position:relative; padding:15px 15px 15px 45px;
+            }
+            td{border:0; padding:0 0 10px 0; width:100% !important;
+                &:last-of-type{
+                    padding-bottom:0
+                }
+                &.define_choice{background:none; padding:0;
+                    input.props_form_element{position:absolute;top:15px;left:15px;}
+                }
+            }
+        }
+    }
+    .respon_inner_dl{
+        display:flex; justify-content: space-between; gap:20px; align-items: flex-start;
+        dt,dd{}
+        dt{
+            display:flex; gap:5px; flex-wrap:wrap; 
+            .res_thtext{color:#4e4e4e ; font-size:14px; font-weight:500;}
+            .res_thtext_sub{ color: #4e4e4e; opacity: 1; font-weight: 400; margin:0; position:relative; top:1px;}
+        }
+        dd{}
+    }
+    .primary_data_para{font-size:14px; font-weight:500;}
+    .data_each_node{font-size:14px;}
+}
 /* // contents */
 
-
-/*  */
