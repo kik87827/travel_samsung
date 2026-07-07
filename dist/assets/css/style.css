@@ -3616,6 +3616,38 @@ span.ui-datepicker-month {
 }
 /* component */
 /* props */
+input.props_form_element {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-sizing: content-box;
+  border: 1px solid #bebebe;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+}
+input.props_form_element:checked {
+  background-position: 0 100%;
+}
+input.props_form_element[type=radio] {
+  border-radius: 100%;
+  background-image: url("../images/ico_radio_24.png");
+}
+input.props_form_element[type=checkbox] {
+  border-radius: 4px;
+  background-image: url("../images/ico_checkbox_24.png");
+}
+input.props_form_element[type=checkbox]:checked {
+  background-color: #176bdd;
+  border-color: #176bdd;
+}
+
 /* popup */
 .btn_guide_box {
   border: 1px solid #ddd;
@@ -3964,9 +3996,75 @@ span.ui-datepicker-month {
 
 .dp_title {
   font-size: 20px;
-  font-weight: #2b2b2b;
+  font-weight: 500;
   line-height: 1;
-  color: inherit;
+  color: #2b2b2b;
+}
+
+table.respon_tb {
+  width: 100%;
+}
+table.respon_tb thead th {
+  background: #4c586c;
+  border-right: 1px solid #707989;
+  padding: 8px 20px;
+}
+table.respon_tb thead th:first-of-type {
+  border-radius: 8px 0 0 8px;
+}
+table.respon_tb thead th:last-of-type {
+  border-right: 0;
+  border-radius: 0 8px 8px 0;
+}
+table.respon_tb tbody td {
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+table.respon_tb tbody td.define_choice {
+  background: #fafcff;
+}
+table.respon_tb tbody td.define_liquid {
+  text-align: left;
+}
+table.respon_tb th.define_choice, table.respon_tb td.define_choice {
+  font-size: 0;
+  line-height: 0;
+  width: 50px;
+}
+table.respon_tb th.define_each, table.respon_tb td.define_each {
+  width: 15.5%;
+}
+
+.res_thtext {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 1;
+  color: #fff;
+}
+
+.res_thtext_sub {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1;
+  color: #fff;
+  opacity: 0.5;
+  margin-top: 3px;
+}
+
+.respon_inner_dl {
+  display: inline-flex;
+}
+.respon_inner_dl dt {
+  display: none;
+}
+.primary_data_para,
+.data_each_node {
+  font-size: 15px;
+  font-weight: 350;
+  line-height: 1;
+  color: #4e4e4e;
+  display: inline-block;
 }
 
 /* // contents */

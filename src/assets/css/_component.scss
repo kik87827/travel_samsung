@@ -2,8 +2,13 @@
 
 /* props */
 input.props_form_element{
-    &[type='radio']{}
-    &[type='checkbox']{}
+    display:inline-block; cursor: pointer; background-color:#fff; width:22px; height:22px; appearance: none; box-sizing: content-box; border:1px solid #bebebe; vertical-align: middle;
+    @include bgicon;
+    &:checked{background-position: 0 100%;}
+    &[type='radio']{border-radius: 100%; background-image:url("../images/ico_radio_24.png");}
+    &[type='checkbox']{border-radius: 4px; background-image:url("../images/ico_checkbox_24.png");
+        &:checked{background-color:#176bdd;border-color:#176bdd;}
+    }
 }
 
 /* popup */
