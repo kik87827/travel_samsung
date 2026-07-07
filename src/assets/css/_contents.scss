@@ -1,3 +1,40 @@
 /* contents */
 .detail_wrap{max-width:1200px; margin:0 auto; padding:0 30px;}
+.dp_block_group{}
+.dp_block{
+    margin-bottom:50px;
+    &:last-of-type{margin-bottom:0;}
+}
+.dp_title_row{margin-bottom:20px;}
+.dp_title{@include font(20px,#2b2b2b,1);}
+.dp_content{}
+.respon_tb_zone{}
+.respon_thead_wrap{}
+table.respon_tb{
+    thead{
+        th{}
+    }
+    tbody{
+        td{}
+    }
+    th,td{
+        &.define_choice{}
+        &.define_liquid{}
+        &.define_each{}
+    }
+}
+.res_thtext{}
+.res_thtext_sub{}
+.respon_inner_dl{
+    dt,dd{}
+    dt{
+        .res_thtext{}
+        .res_thtext_sub{}
+    }
+    dd{}
+}
+.data_each_node{}
 /* // contents */
+
+
+/*  */

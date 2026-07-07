@@ -3615,6 +3615,7 @@ span.ui-datepicker-month {
   }
 }
 /* component */
+/* props */
 /* popup */
 .btn_guide_box {
   border: 1px solid #ddd;
@@ -3950,7 +3951,26 @@ span.ui-datepicker-month {
   padding: 0 30px;
 }
 
+.dp_block {
+  margin-bottom: 50px;
+}
+.dp_block:last-of-type {
+  margin-bottom: 0;
+}
+
+.dp_title_row {
+  margin-bottom: 20px;
+}
+
+.dp_title {
+  font-size: 20px;
+  font-weight: #2b2b2b;
+  line-height: 1;
+  color: inherit;
+}
+
 /* // contents */
+/*  */
 .mv-swiper-global {
   position: relative;
   max-width: 1200px;

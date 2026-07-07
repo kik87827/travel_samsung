@@ -1,4 +1,11 @@
 /* component */
+
+/* props */
+input.props_form_element{
+    &[type='radio']{}
+    &[type='checkbox']{}
+}
+
 /* popup */
 .btn_guide_box{border:1px solid #ddd;padding:20px;color:#000;display:inline-block; font-size:16px;}
 /* 공통 popup */
